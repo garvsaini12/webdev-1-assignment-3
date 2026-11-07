@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Garv Portfolio</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgb(245, 245, 245);
+            color: #333;
+        }
+
+        header {
+            background-color: rgb(0, 55, 173);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            background-color: #e5e5e5;
+            padding: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: rgb(0, 55, 173);
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: orange;
+            transition: 0.3s;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 40px 20px;
+            background-color: white;
+        }
+
+        .hero img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+        }
+
+        .hero h2 {
+            color: rgb(0, 55, 173);
+        }
+
+        .section {
+            padding: 30px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: rgb(0, 55, 173);
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+        }
+
+        .skill-box {
+            background-color: #e5e5e5;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .skill-box:hover {
+            background-color: #d1e0ff;
+            transform: scale(1.05);
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+        }
+
+        .project-box {
+            background-color: #e5e5e5;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .project-box:hover {
+            background-color: #d1e0ff;
+            transform: translateY(-5px);
+        }
+
+        input, textarea {
+            width: 95%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid grey;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: rgb(0, 55, 173);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: orange;
+            transition: 0.3s;
+        }
+
+        footer {
+            background-color: rgb(0, 55, 173);
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Tablet screen */
+        @media screen and (max-width: 900px) {
+
+            .skills, .projects {
+                grid-template-columns: 1fr 1fr;
+            }
+
+        }
+
+        /* Mobile screen */
+        @media screen and (max-width: 600px) {
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .skills, .projects {
+                grid-template-columns: 1fr;
+            }
+
+            .section {
+                margin: 10px;
+                padding: 20px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>MY PORTFOLIO</h1>
+        <h2 style="color: white;">Garv</h2>
+        <p>B.Sc. (Hons.) Data Science Student</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero">
+
+        <div>
+            <h2>Welcome to My Portfolio</h2>
+            <p>Hello! I am a Data Science student learning web development.</p>
+            <p>I enjoy learning new technologies and creating simple websites.</p>
+        </div>
+
+        <div>
+            <img src="garv.jpg" alt="My Photo">
+        </div>
+
+    </div>
+
+    <section class="section" id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am a student who is interested in web development
+            and technology. I am currently learning HTML and CSS.
+            I enjoy creating simple and creative projects.
+        </p>
+
+    </section>
+
+    <section class="section" id="skills">
+
+        <h2>My Skills</h2>
+
+        <div class="skills">
+
+            <div class="skill-box">
+                <h3>HTML</h3>
+                <p>Beginner</p>
+            </div>
+
+            <div class="skill-box">
+                <h3>CSS</h3>
+                <p>Beginner</p>
+            </div>
+
+            <div class="skill-box">
+                <h3>Python</h3>
+                <p>Learning</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section" id="projects">
+
+        <h2>My Projects</h2>
+
+        <div class="projects">
+
+            <div class="project-box">
+                <h3>Portfolio Website</h3>
+                <p>A simple website about me.</p>
+            </div>
+
+            <div class="project-box">
+                <h3>Weekly Schedule</h3>
+                <p>A timetable created using HTML.</p>
+            </div>
+
+            <div class="project-box">
+                <h3>Student Registration Form</h3>
+                <p>A basic registration form using HTML.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section" id="contact">
+
+        <h2>Contact Me</h2>
+
+        <form>
+
+            <label>Name:</label><br>
+            <input type="text" placeholder="Enter your name"><br>
+
+            <label>Email:</label><br>
+            <input type="email" placeholder="Enter your email"><br>
+
+            <label>Message:</label><br>
+            <textarea rows="4" placeholder="Write your message"></textarea><br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </section>
+
+    <footer>
+
+        <p>© 2026 Garv | My Portfolio</p>
+
+    </footer>
+
+</body>
+</html>
